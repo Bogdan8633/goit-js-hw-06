@@ -15,3 +15,13 @@ for (const obj of ingredients) {
   newTag.classList.add("item");
   ingredientsEL.append(newTag);
 }
+
+// console.log(ingredientsEL);
+
+// const makeLi = ingredients.forEach((elem) => {
+//   const newLi = document.createElement("li");
+//   newLi.textContent = "elem";
+//   newLi.classList.add("item");
+// });
+
+// ingredientsEL.append(makeLi);
