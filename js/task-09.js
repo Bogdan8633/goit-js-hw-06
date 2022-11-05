@@ -5,12 +5,9 @@ function getRandomHexColor() {
 const buttonEl = document.querySelector(".change-color");
 const spanEl = document.querySelector(".color");
 buttonEl.addEventListener("click", SetBackgroundColor);
-function sayJojo() {
-  console.log("Jojo");
-  console.log(getRandomHexColor());
-}
 
 function SetBackgroundColor() {
-  document.body.style.background = getRandomHexColor();
-  spanEl.textContent = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  document.body.style.background = randomColor;
+  spanEl.textContent = randomColor;
 }
