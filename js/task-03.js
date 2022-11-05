@@ -24,5 +24,6 @@ alt="${image.alt}"
 />`
   )
   .join("");
+console.log(newgallery);
 
 galleryEl.insertAdjacentHTML("afterbegin", newgallery);
