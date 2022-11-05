@@ -11,11 +11,11 @@ function onFormSubmit(event) {
 
   if (email.value === "" || password.value === "") {
     alert("Всі поля мають бути заповнені");
-  } else {
-    const newObj = {};
-    newObj.email = email.value;
-    newObj.password = password.value;
-    console.log(newObj);
-    event.currentTarget.reset();
+    return;
   }
+  const newObj = {};
+  newObj.email = email.value;
+  newObj.password = password.value;
+  console.log(newObj);
+  event.currentTarget.reset();
 }
